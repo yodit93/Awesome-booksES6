@@ -32,7 +32,6 @@ class Books {
 }
 
 if (localStorage.getItem('books')) {
-  let books = '';
   books = JSON.parse(localStorage.getItem('books'));
 } else {
   const book1 = new Books('Oromay', 'Bealu Girma', 'id1');
@@ -43,4 +42,4 @@ if (localStorage.getItem('books')) {
   this.savedBooks();
 }
 
-export { Books };
+export { books, Books };
